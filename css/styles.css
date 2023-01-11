@@ -1,0 +1,32 @@
+/* Tag Selectors */
+
+body{
+    background-image: url(bgimg.jpg) ;
+    
+    /* Fitting image into backgroind */
+    /* Soln 1 
+     background-size: 100vw 100vh;
+    background-repeat: no-repeat; */
+
+    /* Soln 2*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+h1{
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin-left : 40%
+}
+
+/* Class selectors */
+
+.inputfld{
+ text-align: left;   
+ align-items: center;
+}
