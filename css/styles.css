@@ -16,13 +16,7 @@ body{
     
 }
 
-h1{
-    text-align: center;
-}
-form{
-    width: 50%;
-    margin-left : 40%
-}
+
 
 /* Class selectors */
 
@@ -37,6 +31,8 @@ form{
     width: 100%;
     clear: both;
 }
+
+
 .forgetform{
     display: flexbox;
     align-items: left;
@@ -45,5 +41,11 @@ form{
 }
 .tryingsthnew{
     display: flexbox;
+    align-items: center;
+}
+.signincontainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
