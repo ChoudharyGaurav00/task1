@@ -30,3 +30,20 @@ form{
  text-align: left;   
  align-items: center;
 }
+
+.container-forgetpage{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+.forgetform{
+    display: flexbox;
+    align-items: left;
+    align-items: flex-start;
+    clear: both;
+}
+.tryingsthnew{
+    display: flexbox;
+    align-items: center;
+}
