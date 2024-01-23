@@ -1,11 +1,20 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
+const connectDb=require("./config/dbConnection")
+// const bodyParser = require('body-parser')
+connectDb();
 const app = express();
-const cors = require("cors")
+const cors = require("cors");
+const errorHandler = require("./middleware/errorHandler");
 
+// app.use(router);
+// const router = require("./routes/contact-routes");
 
 app.use(cors());
 app.use(express.json());
-PORT = 3000;
+app.use("/api/contacts", require("./routes/contact-routes"));
+app.use(errorHandler)
+PORT = process.env.PORT || 5000;
 
 
 
@@ -14,15 +23,10 @@ PORT = 3000;
 
 
 app.get('/', (req, res) => {
-    console.log('here');
-    res.send('jo');
+    console.log('Home route');
 })
 
-app.get('/api/contact', (req, res) => {
-    console.log('here')
-    // res.send('jo');
-    // res.statusCode(200).send('contact created');
-})
+
 app.listen(3000, () => {
     console.log('server started', PORT)
 });
